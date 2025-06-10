@@ -2,6 +2,10 @@
 
 https://github.com/kmichal661/ProjektJavaZaliczenie
 
+HTTPS clone:
+
+`https://github.com/kmichal661/ProjektJavaZaliczenie.git`
+
 # Logowanie do aplikacji
 
 Aplikacja powinna mieć możliwość zalogowania kontem demo gdy jest uruchomiona lokalnie z bazą danych H2
