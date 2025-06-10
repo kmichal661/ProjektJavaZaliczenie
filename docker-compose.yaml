@@ -1,0 +1,31 @@
+# filepath: c:\Users\kmich\Desktop\Studia\Aplikacje WWW w JAVA\Projekt zaliczeniowy\docker-compose.yaml
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ./demo
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:h2:file:/app/data/testdb
+      SPRING_DATASOURCE_USERNAME: sa
+      SPRING_DATASOURCE_PASSWORD: ""
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      UPLOAD_DIR: /app/uploads # Add this environment variable
+    volumes:
+      - backend-data:/app/data
+      - ./uploads:/app/uploads # Map the uploads directory
+
+  frontend:
+    build:
+      context: ./FrontEnd/real-estate-app
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      REACT_APP_API_URL: http://localhost:8080
+
+volumes:
+  backend-data:
