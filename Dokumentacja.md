@@ -233,3 +233,29 @@ Real Estate App to aplikacja internetowa umożliwiająca użytkownikom przegląd
 ### Wymagania wstępne
 
 - Node.js w wersji 18 lub nowszej.
+
+# Screenshots
+
+## Rejestracja użytkownika
+
+![alt text](image.png)
+
+## Logowanie użytkownika
+
+![alt text](image-1.png)
+
+## Dodawanie oferty
+
+![alt text](image-2.png)
+
+## Przeglądanie ofert
+
+![alt text](image-3.png)
+
+## Szczegóły oferty
+
+![alt text](image-4.png)
+
+## Szczegóły oferty z numerem telefonu
+
+![alt text](image-5.png)
